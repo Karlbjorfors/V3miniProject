@@ -20,13 +20,15 @@ public class Asset//Base class
 //Derived class 1
 public class Laptop : Asset
 {
-    
+    public Laptop(string ModelName, DateTime PurchaseDate, decimal PriceInUSD)
+        : base(ModelName, PurchaseDate, PriceInUSD) { }
 }
 
 //Derived class 2
 public class MobilePhone : Asset
 {
-
+    public MobilePhone(string ModelName, DateTime PurchaseDate, decimal PriceInUSD) 
+        : base(ModelName, PurchaseDate, PriceInUSD) { }
 }
 
 //Office Class
